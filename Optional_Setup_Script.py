@@ -35,6 +35,11 @@ def main():
         
         install("pandas")
         print("Pandas - OK!")
+        
+        print("Installing wfdb...")
+        
+        install("wfdb")
+        print("wfdb - OK!")
 
     except subprocess.CalledProcessError as e:
         print(f"An error occurred during installation: {e}")
